@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "18290841545",
+    "firebase_url": "https://nosso-chate-fb.firebaseio.com",
+    "project_id": "nosso-chate-fb",
+    "storage_bucket": "nosso-chate-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18290841545:android:58ae99ad461aebbd",
+        "android_client_info": {
+          "package_name": "com.app.matheus.comunicacao4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18290841545-1fbklhuk91dv8vl4vnm5f73pac771s93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvFU4Bi__YZQSqwVeVGntb5e9lPXj_fKw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18290841545:android:78e40d630b6ce696",
+        "android_client_info": {
+          "package_name": "com.app.viveragro.viveragro2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18290841545-1fbklhuk91dv8vl4vnm5f73pac771s93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvFU4Bi__YZQSqwVeVGntb5e9lPXj_fKw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

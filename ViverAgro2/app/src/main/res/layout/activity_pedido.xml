@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:id="@+id/ped"
+        android:layout_marginTop="3dp"
+        android:background="@color/corbranca"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_senha"
+        android:layout_alignRight="@+id/edt_senha"
+        android:layout_alignEnd="@+id/edt_senha"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        >
+
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+
+            android:layout_alignParentTop="true"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:id="@+id/ivProfissaoFoto"
+                android:layout_width="50dp"
+                android:src="@drawable/user"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:textColor="@color/material_drawer_primary_text"
+                android:layout_toRightOf="@+id/ivProfissaoFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id = "@+id/tvProfissionalNome"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/ratingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/ivProfissaoFoto"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:gravity="right"-->
+            <!--android:rating="4.5"-->
+            <!--android:scaleX="0.3"-->
+            <!--android:scaleY="0.3" />-->
+
+            <TextView
+                android:id="@+id/tvtelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfissionalNome"
+                android:layout_toEndOf="@+id/ivProfissaoFoto"
+                android:layout_toRightOf="@+id/ivProfissaoFoto"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/material_drawer_primary_text"
+                android:textSize="15dp" />
+            <View
+                android:id = "@+id/vw_divider8"
+                android:layout_width="match_parent"
+                android:layout_height="0.20dp"
+                android:layout_marginTop="1dp"
+                android:background="#e0dddd"
+                android:layout_below="@+id/tvDescricao"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvbairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ivProfissaoFoto"
+            android:paddingRight="16dp"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/tvrua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvProfissionalNome"
+            android:layout_alignStart="@+id/tvProfissionalNome"
+            android:layout_below="@+id/tvProfissionalNome"
+            android:paddingRight="16dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvnumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvProfissionalNome"
+            android:layout_alignStart="@+id/tvProfissionalNome"
+            android:layout_below="@+id/tvProfissionalNome"
+            android:paddingRight="16dp"
+            android:textSize="15dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edt_senha"
+            android:layout_alignRight="@+id/edt_senha"
+            android:layout_below="@+id/edt_senha"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_negativo1"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:onClick="negar"
+                android:text="  Não confirmar  " />
+
+            <Button
+                android:id="@+id/button_descr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:background="@color/colorPrimary"
+                android:onClick="confimar"
+                android:text="  Confimar entrega  "
+                android:textColor="@color/corbranca" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:background="@color/corbranca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:id="@+id/add"
+        android:layout_marginTop="3dp"
+        android:background="@color/corbranca"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Você ainda não recebeu nenhum pedido novo, quando receber nós vamos te avisar ;)"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="22dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimarytext"
+            android:layout_below="@+id/edt_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView6" />
+        <View
+            android:id = "@+id/vw_divider5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/qtd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/frutas"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

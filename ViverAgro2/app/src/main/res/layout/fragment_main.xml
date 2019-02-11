@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll2"
+
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative2"
+            android:background="#ffffff"
+            android:layout_alignLeft="@+id/relative1"
+            android:layout_alignStart="@+id/relative1"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/farmer"
+                android:foregroundGravity="center"
+                android:id="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Venda com o melhor preço"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="O melhor lugar pra você produtor anunciar seus produtos é aqui"
+                android:id="@+id/textView9"
+                android:gravity="center"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll3"
+
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative3"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/food_stand"
+                android:id="@+id/imageView2"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Compre produtos do campo com a melhor qualidade"
+                android:id="@+id/textView2"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Os melhores agricultores da sua região estão aqui"
+                android:id="@+id/textView8"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll4"
+
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative4"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/farmer"
+                android:id="@+id/imageView4"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Faça os anúncios das promoções de sua loja de materiais da construção civil "
+                android:id="@+id/textView5"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_below="@+id/textView4"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Anuncie de uma forma eficiente"
+                android:id="@+id/textView4"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_marginTop="37dp"
+                android:layout_below="@+id/imageView4"
+                 />
+
+            <Button
+                android:id="@+id/button_descr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/textView5"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:layout_below="@id/textView5"
+                android:onClick="vender"
+                android:text=" quero vender "
+                android:textColor="@color/corbranca" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll1"
+
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/scroll2"
+        android:layout_toRightOf="@+id/scroll2">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView4">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:src="@drawable/logotipohorizontal" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Bem-Vindo a Viver Agro"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Uma plataforma pra você encontrar os melhores produtos do campo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimarytext" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

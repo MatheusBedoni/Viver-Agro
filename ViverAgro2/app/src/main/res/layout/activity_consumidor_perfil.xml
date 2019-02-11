@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/card_shadow"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/foto_do_usuario"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:foregroundGravity="right"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="right"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/letrasdois"
+            android:visibility="visible" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#fff"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_container"
+        android:layout_below="@+id/tb_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/inc_tb_bottom"
+        android:visibility="visible">
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

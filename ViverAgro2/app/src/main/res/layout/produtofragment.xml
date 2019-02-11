@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0dddd"
+    tools:context="com.app.viveragro.viveragro2.User">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:id="@+id/add"
+        android:layout_marginTop="3dp"
+        android:background="@color/corbranca"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Adicione seus produtos que serão vendidos na plataforma"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="22dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimarytext"
+            android:layout_below="@+id/edt_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView6" />
+
+
+        <Button
+            android:id="@+id/addProdutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:onClick="addProdutos"
+            android:text="   Adicione seus produtos   "
+            android:textColor="@color/corbranca"
+            tools:ignore="OnClick" />
+        <View
+            android:id = "@+id/vw_divider5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/qtd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+        <ImageView
+            android:id="@+id/ivProfissaoFoto"
+            android:layout_width="match_parent"
+            android:src="@drawable/frutas"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_marginTop="3dp"
+        android:background="@color/corbranca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:src="@drawable/plus"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+

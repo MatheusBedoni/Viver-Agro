@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/corbranca"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_drawer_dark_selected"
+        android:onClick="fechar"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:onClick="fechar"
+            android:layout_gravity="left|center_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/corbranca"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Quantas estrelas esse produtor merece?"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimarytext"
+                    android:id="@+id/texto1"
+                    android:layout_gravity="center"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/ratingBar" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_titulo"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/titulo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Título para o seu comentário:"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_comentario"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comentario"
+                        android:hint="Digite seu comentário"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:text="Enviar comentário"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/corbranca"
+                    android:onClick="enviarComent"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/corbranca"
+        tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/tvProfissionalProfissao"
+            android:layout_alignLeft="@+id/tvProfissionalProfissao"
+            android:layout_alignStart="@+id/tvProfissionalProfissao"
+            android:layout_marginBottom="22dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbartitle"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textColor="#603813"
+            android:layout_marginTop="10dp"
+            android:text="Seu titulo"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:background="@color/corbranca"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+       >
+
+        <ImageView
+            android:id="@+id/ivProfissaoFoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="3dp"
+            android:layout_above="@+id/tvProfissionalProfissao"
+            android:layout_alignLeft="@+id/tvProfissionalProfissao"
+            android:layout_alignStart="@+id/tvProfissionalProfissao"
+            android:layout_marginBottom="22dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/prr" />
+
+        <TextView
+            android:id="@+id/tvProfissionalNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="64dp"
+            android:text="Meu nome"
+            android:textColor="@color/material_drawer_primary_text"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvProfissionalProfissao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProfissionalNome"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="13dp"
+            android:clickable="true"
+            android:layout_marginBottom="5dp"
+            android:onClick="editar"
+            android:text="Adicione uma pequena descrição do seu perfil aqui "
+            android:textColor="@color/material_drawer_secondary_text"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/shopping_cart_2_"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/aval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ratingBar"
+            android:layout_alignStart="@+id/ratingBar"
+            android:layout_alignTop="@+id/ratingBar"
+            android:layout_marginLeft="85dp"
+            android:layout_marginStart="85dp"
+            android:text="Ótimo"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivProfissaoFoto"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:gravity="right"
+            android:rating="4.5"
+            android:scaleX="0.3"
+            android:scaleY="0.3" />
+
+
+    </RelativeLayout>
+
+
+        <com.app.viveragro.viveragro2.extras.SlidingTabLayout
+            android:id="@+id/stl_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_tabs"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            ></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+</LinearLayout>

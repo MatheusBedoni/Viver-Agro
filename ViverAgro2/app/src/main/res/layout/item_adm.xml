@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/user"
+        android:id="@+id/ivProfissaoFoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/nome"
+        android:layout_alignTop="@+id/txt_nome"
+        android:layout_toRightOf="@+id/txt_nome"
+        android:layout_toEndOf="@+id/txt_nome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telefone: comprador "
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/txt_telefone"
+        android:layout_below="@+id/nome"
+        android:layout_alignLeft="@+id/txt_nome"
+        android:layout_alignStart="@+id/txt_nome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/txt_phone"
+        android:layout_alignTop="@+id/txt_telefone"
+        android:layout_toRightOf="@+id/txt_telefone"
+        android:layout_toEndOf="@+id/txt_telefone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/problema"
+        android:layout_alignTop="@+id/txt_problema"
+        android:layout_toRightOf="@+id/txt_problema"
+        android:layout_toEndOf="@+id/txt_problema" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp"
+        android:text=" "
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/data"
+        android:layout_below="@+id/txt_phone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telefone vendedor: "
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/txt_nome"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivProfissaoFoto"
+        android:layout_marginStart="6dp"
+        android:layout_toRightOf="@+id/ivProfissaoFoto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Preco da venda:"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimarytext"
+        android:id="@+id/txt_problema"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/ivProfissaoFoto"
+        android:layout_alignStart="@+id/ivProfissaoFoto"
+        android:layout_alignLeft="@+id/ivProfissaoFoto" />
+
+    <TextView
+        android:id="@+id/txt_bairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_problema"
+        android:layout_alignStart="@+id/txt_problema"
+        android:layout_below="@+id/txt_problema"
+        android:text="Bairro:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_bairro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_problema"
+        android:layout_toEndOf="@+id/txt_bairro"
+        android:layout_toRightOf="@+id/txt_bairro"
+        android:text="sasasa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="16dp"
+       />
+
+    <TextView
+        android:id="@+id/txt_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_bairro"
+        android:layout_alignStart="@+id/txt_bairro"
+        android:layout_below="@+id/txt_bairro2"
+        android:text="Numero:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_numero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_bairro2"
+        android:layout_toEndOf="@+id/ivProfissaoFoto"
+        android:layout_toRightOf="@+id/ivProfissaoFoto"
+        android:text="sasasssdsda"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/txt_rua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_bairro"
+        android:layout_alignStart="@+id/txt_bairro"
+        android:layout_below="@+id/txt_numero"
+        android:text="Rua:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_rua2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_numero2"
+        android:layout_toEndOf="@+id/ivProfissaoFoto"
+        android:layout_toRightOf="@+id/ivProfissaoFoto"
+        android:text="sasasssdsda"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="16dp" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:weightSum="1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txt_rua2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.333"
+            android:id="@+id/imageView6"
+            android:src="@drawable/whatsapp_"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView5"
+            android:layout_weight="0.333"
+            android:src="@drawable/phone_receiver"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

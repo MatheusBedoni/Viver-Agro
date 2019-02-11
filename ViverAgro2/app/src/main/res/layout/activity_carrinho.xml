@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbartitle"
+            android:textStyle="bold"
+            android:textColor="#603813"
+            android:layout_marginTop="10dp"
+            android:text="Itens no pedido"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:background="@color/corbranca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+    <View
+        android:id = "@+id/vw_divider8"
+        android:layout_width="match_parent"
+        android:layout_height="0.40dp"
+        android:layout_marginTop="15dp"
+        android:background="#e0dddd"
+        android:layout_below="@+id/tvDescricao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_toRightOf="@+id/ivProfissaoFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id = "@+id/tventrega"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="Entrega (1h - 2h)"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:textColor="@color/material_drawer_primary_text"
+        android:layout_toRightOf="@+id/ivProfissaoFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id = "@+id/tvtotal"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total: "
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/area"
+        android:layout_below="@+id/edt_senha"
+        android:layout_alignRight="@+id/edt_senha"
+        android:layout_alignEnd="@+id/edt_senha"
+      >
+
+
+        <Button
+            android:text="Escolher forma de pagamento"
+            android:background="@color/colorPrimary"
+            android:layout_weight="3"
+            android:textColor="@color/corbranca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comprar"
+            android:onClick="pagamento"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

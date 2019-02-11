@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbartitle"
+            android:textStyle="bold"
+            android:textColor="#603813"
+            android:layout_marginTop="10dp"
+            android:text="Fazer login com"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_senha"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textView3"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:passwordToggleEnabled="true"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                android:id="@+id/txt_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="74dp"
+                android:text="Digite seu email"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_nome"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edt_email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="Digite sua senha"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/edt_senha"
+                android:layout_alignRight="@+id/edt_senha"
+                android:layout_below="@+id/edt_senha"
+                android:layout_marginTop="41dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_negativo1"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:onClick="cadastro"
+                    android:text="CADASTRO" />
+
+                <Button
+                    android:id="@+id/button_descr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimary"
+                    android:onClick="entrar"
+                    android:text="entrar"
+                    android:textColor="@color/corbranca" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Esqueci minha senha"
+                android:id="@+id/recuperar"
+                android:clickable="true"
+                android:onClick="mudarSenha"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp"
+                android:layout_below="@+id/area"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/facebook_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+
+                android:layout_below="@+id/recuperar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+
+                android:background="#475993"
+                android:onClick="entrarfacebook"
+                android:drawableLeft="@drawable/facebook_login"
+                android:text="  entre com o facebook  "
+                android:textColor="@color/corbranca" />
+            <!--<Button-->
+                <!--android:id="@+id/google_button"-->
+                <!--style="@style/Base.Widget.AppCompat.Button.Borderless"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_below="@+id/facebook_button"-->
+                <!--android:onClick="cadastro"-->
+                <!--android:drawableLeft="@drawable/search"-->
+                <!--android:text="  entre com o google  " />-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

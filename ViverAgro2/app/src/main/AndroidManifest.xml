@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.viveragro.viveragro2">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="Viver Agro" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Entrar"
+            android:label="@string/title_activity_entrar"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".RegistrarActivity" />
+        <activity android:name=".RegistrarFacebook" />
+        <activity
+            android:name=".ProdutorPerfil"
+            android:label="@string/title_activity_produtor_perfil"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AdicionarProdutos"
+            android:label="@string/title_activity_adicionar_produtos"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".User"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AdicionarDescricao"
+            android:label="@string/title_activity_adicionar_descricao"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ConsumidorPerfil"
+            android:label="@string/title_activity_consumidor_perfil"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".fragments.ProdutoresFragment"
+            android:label="@string/title_activity_produtores_fragment"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".service.ServieTest" />
+
+        <receiver
+            android:name=".service.BroadcastReceiverAux"
+            android:label="BroadcastReceiverAux"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="ALARME_DISPARADO" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ProdutorActivity"
+            android:label="@string/title_activity_produtor"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProdutorConsumidorActivity"
+            android:label="@string/title_activity_produtor"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CarrinhoActivity"
+            android:label="@string/title_activity_carrinho"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".PedidoActivity" />
+        <activity
+            android:name=".ProdtorConsumidor"
+            android:label="@string/title_activity_prodtor_consumidor"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ConsumidorActivity"
+            android:label="@string/title_activity_consumidor"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".FormadePagamento" />
+        <activity
+            android:name=".FretistaPerfil"
+            android:label="@string/title_activity_fretista_perfil"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".FretistaEditar" />
+        <activity
+            android:name=".EditarProdutos"
+            android:label="@string/title_activity_editar_produtos"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MudarSenha"
+            android:label="@string/title_activity_mudar_senha"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CarrinhoActivityProd"
+            android:label="@string/title_activity_carrinho_prod"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FormasDePagamentoProd"
+            android:label="@string/title_activity_formas_de_pagamento_prod"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AdmActivity"
+            android:label="@string/title_activity_adm"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

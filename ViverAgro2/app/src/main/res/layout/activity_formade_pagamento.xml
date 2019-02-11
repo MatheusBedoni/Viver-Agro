@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbartitle"
+            android:textStyle="bold"
+            android:textColor="#603813"
+            android:layout_marginTop="10dp"
+            android:text="Formas de pagamento"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pagamento"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Como você vai pagar"
+        android:textSize="15dp" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_caartao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Cartão de crédito"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_dinheiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Dinheiro"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <View
+        android:id = "@+id/vw_divider8"
+        android:layout_width="match_parent"
+        android:layout_height="0.40dp"
+        android:layout_marginTop="15dp"
+        android:background="#e0dddd"
+        android:layout_below="@+id/tvDescricao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/endereco"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Endereço de entrega"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/adicionar"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:onClick="endereco"
+        android:text="Adicionar endereço" />
+
+
+    <TextView
+        android:textColor="@color/material_drawer_primary_text"
+        android:layout_toRightOf="@+id/ivProfissaoFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Bairro:"
+        android:id = "@+id/tvbairro"
+        android:visibility="gone"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tvrua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rua: "
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/material_drawer_primary_text"
+        android:layout_alignLeft="@+id/tvProfissionalNome"
+        android:layout_alignStart="@+id/tvProfissionalNome"
+        android:layout_below="@+id/tvProfissionalNome"
+        android:visibility="gone"
+        android:paddingRight="16dp"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/tvnumero"
+        android:text="Número: "
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/material_drawer_primary_text"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvProfissionalNome"
+        android:layout_alignStart="@+id/tvProfissionalNome"
+        android:layout_below="@+id/tvProfissionalNome"
+        android:paddingRight="16dp"
+        android:visibility="gone"
+        android:textSize="15dp" />
+
+    <Button
+        android:text="Concluir pedido"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/corbranca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comprar"
+        android:onClick="pagamento"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
